@@ -19,10 +19,10 @@ html, body {
 }
 
 body {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 h1 {
@@ -52,19 +52,78 @@ h1 {
     margin-left: 10vw;
 }
 
+#content {
+    display: grid;
+    grid-template-columns: 5rem auto 5rem;
+    gap: 2rem;
+    margin-bottom: 5vh;
+}
+
+#navrail {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 13vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-self: flex-start;
+    height: fit-content;
+    background-image: linear-gradient(to bottom, #4450B1, #2f377a);
+    box-shadow: 
+        0px 0px 4px 1px #ffffff,
+        0px 0px 8px 2px #0019e6;
+    font-family: 'Bungee Hairline', 'Courier New', Courier, monospace;
+}
+
+#navrail a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+#navrail a:hover {
+    color:#ffe300;
+    margin-left: 0.75rem;
+}
+
+#navrail a i {
+    font-size: 2rem;
+}
+
+.hero {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    cursor:default;
+    transition: all 0.2s ease-in-out;
+    text-shadow:
+        3px 3px 2px #ffe300,
+        -3px -3px 2px #4450B1;
+}
+
+.hero:hover {
+    text-shadow:
+    -3px -3px 2px #ffe300,
+    3px 3px 2px #4450B1;
+}
+
 .cardBox {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 80vw;
+    gap: 2rem;
 }
 
 .card {
     background-image: linear-gradient(to top, #4450B1 20%, #2f377a);
     margin: 0;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     width: fit-content;
     box-shadow: 
         0px 0px 4px 1px #ffffff,
@@ -76,12 +135,13 @@ h1 {
     
 }
 
-    /* .card:hover {
-        box-shadow: inset 0px 0px 14px #ffffff;
+    .card:hover {
+        margin-left: 2rem;
+        margin-right: -2rem;
         
     }
 
-    .card:hover h1 {
+    /*.card:hover h1 {
         color:#000b67;
         box-shadow:
         0px 0px 1px 1px #ffffff,
