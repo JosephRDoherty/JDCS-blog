@@ -3,6 +3,8 @@ const http = require('http')
 const hostname = 'doherty.software';
 const port = 443;
 
+console.log("Hello");
+
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
