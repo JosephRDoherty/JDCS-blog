@@ -17,7 +17,7 @@ server.listen(port, hostname, () => {
 
 const fs = require('fs');
 
-const content = 'Some content!';
+const content = 'This worked';
 
 fs.writeFile('test.txt', content, err => {
   if (err) {
