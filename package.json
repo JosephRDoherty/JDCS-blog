@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Joe Dohertys Blog",
   "main": "app.js",
-
+  "scripts": {
+    "test": "Hello"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JosephRDoherty/JDCS-blog.git"
