@@ -5,7 +5,7 @@ deployment:
     - /bin/cp blog.html $DEPLOYPATH
     - /bin/cp -R pages $DEPLOYPATH
     - /bin/cp -R styles $DEPLOYPATH
-    #- export REPOPATH=/home/dohewjes/repositories/Money-Management-System
+    #- export REPOPATH=/home/dohewjes/repositories/JDCS-blog
     #- /rm -Rf ${DEPLOYPATH}_old
     #- /cp -R ${DEPLOYPATH} ${DEPLOYPATH}_old
     #- /rsync -aP --exclude '.git' --exclude '.well-known' ${REPOPATH}/ ${DEPLOYPATH} --delete-after
