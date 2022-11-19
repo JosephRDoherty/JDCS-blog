@@ -3,8 +3,8 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/dohewjes/public_html/blog
     - /bin/cp blog.html $DEPLOYPATH
-    - /bin/cp -R pages $DEPLOYPATH
     - /bin/cp -R styles $DEPLOYPATH
+    - /bin/cp -R pages $DEPLOYPATH
     #- export REPOPATH=/home/dohewjes/repositories/JDCS-blog
     #- /rm -Rf ${DEPLOYPATH}_old
     #- /cp -R ${DEPLOYPATH} ${DEPLOYPATH}_old
