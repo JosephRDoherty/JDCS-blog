@@ -4,6 +4,7 @@ deployment:
     - export DEPLOYPATH=/home/dohewjes/public_html/blog
     - /bin/cp blog.html $DEPLOYPATH
     - /bin/cp app.js $DEPLOYPATH
+    - /bin/cp package.json $DEPLOYPATH
     - /bin/cp -R styles $DEPLOYPATH
     - /bin/cp -R pages $DEPLOYPATH
     - /bin/cp -R blog-js $DEPLOYPATH
