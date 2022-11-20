@@ -15,13 +15,15 @@ server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 })
 
-const fs = require('fs');
+function writeFileTest(){
+  const fs = require('fs');
 
-const content = 'This worked';
+  const content = 'This worked';
 
-fs.writeFile('test.txt', content, err => {
-  if (err) {
-    console.error(err);
-  }
-  // file written successfully
-});
+  fs.writeFile('test.txt', content, err => {
+    if (err) {
+      console.error(err);
+    }
+    // file written successfully
+  });
+}
