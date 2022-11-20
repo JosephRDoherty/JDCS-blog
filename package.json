@@ -1,19 +1,16 @@
 {
   "name": "jdcs-blog",
-  "version": "1.0.0",
-  "description": "Joe Dohertys Blog",
-  "main": "app.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "Hello"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JosephRDoherty/JDCS-blog.git"
-  },
-  "author": "Joseph Doherty",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JosephRDoherty/JDCS-blog/issues"
-  },
-  "homepage": "https://doherty.software/blog/blog.html"
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  }
 }
