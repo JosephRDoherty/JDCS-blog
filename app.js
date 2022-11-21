@@ -13,6 +13,10 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+// ======================================================
+//        URLs
+// ======================================================
+
 // index page
 app.get('/jdcsblog', function(req, res) {
   res.render('pages/index');
@@ -28,6 +32,16 @@ app.get('/blog', function(req, res) {
 app.get('/about', function(req, res) {
   res.render('pages/about');
 });
+
+// blog template
+app.get('/blogtemplate', function(req, res) {
+  res.render('blogposts/blogtemplate');
+});
+
+
+// ======================================================
+//        END URLs
+// ======================================================
 
 app.use(logger('dev'));
 app.use(express.json());
