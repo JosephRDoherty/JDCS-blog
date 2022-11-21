@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/dohertyjoe198/nodevenv/public_html/blog
+    - export DEPLOYPATH=/home/dohertyjoe198/public_html/blog
     - /bin/cp app.js $DEPLOYPATH
     - /bin/cp package-lock.json $DEPLOYPATH
     - /bin/cp package.json $DEPLOYPATH
