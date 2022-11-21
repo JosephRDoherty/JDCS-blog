@@ -20,6 +20,9 @@ app.get('/jdcsblog', function(req, res) {
 app.get('/', function(req, res) {
   res.render('pages/index');
 });
+app.get('/blog', function(req, res) {
+  res.render('pages/index');
+});
 
 // about page
 app.get('/about', function(req, res) {
