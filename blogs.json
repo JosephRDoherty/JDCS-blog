@@ -1,6 +1,18 @@
-{
-    "title": "blogtemplate",
-    "subtitle": "This is the blog post tester",
-    "url": "/blogtest",
-    "tags":["test"]
-}
+[
+    {
+        "title": "Blog Template",
+        "subtitle": "This is the blog post template",
+        "url": "/blogtemplate",
+        "date": "2022/11/21",
+        "tags":["test"]
+    },
+
+    {
+        "title": "Blog Demo",
+        "subtitle": "This is just the template again",
+        "url": "/blogtemplate",
+        "date": "2022/11/20",
+        "tags":["test"]
+    }
+    
+]

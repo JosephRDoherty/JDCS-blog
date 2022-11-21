@@ -1,0 +1,13 @@
+
+<hr>
+<h2>Articles</h2>
+<hr>
+<% 
+for(let i=0; i< blog.length; i++){ %>
+    <div class="blogCard"><a href="<%- blog[i].url %>">
+        <h3><%- blog[i].title %></h3>
+        <h4><%- blog[i].subtitle %></h4>
+        <p><%- blog[i].date %></p>
+        </a>
+    </div>
+<%}%>

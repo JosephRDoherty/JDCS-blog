@@ -3,24 +3,41 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const fs = require('fs');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+const cors = require("cors");
+
+
 var app = express();
+
+//cors
+app.use(cors())
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
+fs.readFile("./blogs.json", "utf8", (err, jsonString) => {
+  if (err) {
+    console.log("Error reading file from disk:", err);
+    return;
+  }
+  try {
+    const blogs = JSON.parse(jsonString);
+    app.locals.blog = blogs;
+  } catch (err) {
+    console.log("Error parsing JSON string:", err);
+  }
+});
 
 // ======================================================
 //        URLs
 // ======================================================
 
 // index page
-app.get('/jdcsblog', function(req, res) {
-  res.render('pages/index');
-});
 app.get('/', function(req, res) {
   res.render('pages/index');
 });
