@@ -14,7 +14,10 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // index page
-app.get('/blog', function(req, res) {
+app.get('/jdcsblog', function(req, res) {
+  res.render('pages/index');
+});
+app.get('/', function(req, res) {
   res.render('pages/index');
 });
 
