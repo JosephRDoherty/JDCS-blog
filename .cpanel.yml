@@ -9,8 +9,8 @@ deployment:
     - /bin/cp -R bin $DEPLOYPATH
     - /bin/cp -R public $DEPLOYPATH
     - /bin/cp -R routes $DEPLOYPATH
-    - /bin/cp -R views $DEPLOYPATH
     - /bin/cp -R tests $DEPLOYPATH
+    - /bin/cp -R views $DEPLOYPATH
     #- export REPOPATH=/home/dohertyjoe198/repositories/JDCS-blog/
     #- /rm -Rf ${DEPLOYPATH}_old
     #- /cp -R ${DEPLOYPATH} ${DEPLOYPATH}_old
