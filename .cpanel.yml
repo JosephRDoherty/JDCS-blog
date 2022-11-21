@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/dohertyjoe198/public_html/blog
+    - export DEPLOYPATH=/home/dohertyjoe198/public_html/blog/
     - /bin/cp app.js $DEPLOYPATH
     - /bin/cp package-lock.json $DEPLOYPATH
     - /bin/cp package.json $DEPLOYPATH
@@ -10,7 +10,7 @@ deployment:
     - /bin/cp -R routes $DEPLOYPATH
     - /bin/cp -R views $DEPLOYPATH
     - /bin/cp -R tests $DEPLOYPATH
-    #- export REPOPATH=/home/dohertyjoe198/repositories/JDCS-blog
+    #- export REPOPATH=/home/dohertyjoe198/repositories/JDCS-blog/
     #- /rm -Rf ${DEPLOYPATH}_old
     #- /cp -R ${DEPLOYPATH} ${DEPLOYPATH}_old
     #- /rsync -aP --exclude '.git' --exclude '.well-known' ${REPOPATH}/ ${DEPLOYPATH} --delete-after
