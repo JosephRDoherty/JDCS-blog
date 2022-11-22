@@ -50,9 +50,18 @@ app.get('/about', function(req, res) {
   res.render('pages/about');
 });
 
+
+
+// We need some automation here, in order to add these blog posts
+
 // blog template
 app.get('/blogtemplate', function(req, res) {
   res.render('blogposts/blogtemplate');
+});
+
+// Building a Blog
+app.get('/buildingablog', function(req, res) {
+  res.render('blogposts/buildingablog');
 });
 
 
@@ -65,6 +74,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+//app.use(express.static("public"));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
