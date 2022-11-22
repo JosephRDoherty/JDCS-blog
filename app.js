@@ -50,6 +50,11 @@ app.get('/about', function(req, res) {
   res.render('pages/about');
 });
 
+// resume page
+app.get('/resume', function(req, res) {
+  res.render('pages/resume');
+});
+
 
 
 // We need some automation here, in order to add these blog posts
@@ -57,6 +62,11 @@ app.get('/about', function(req, res) {
 // blog template
 app.get('/blogtemplate', function(req, res) {
   res.render('blogposts/blogtemplate');
+});
+
+// Fake Blog Post
+app.get('/fakeblogpost', function(req, res) {
+  res.render('blogposts/fakeblogpost');
 });
 
 // Building a Blog

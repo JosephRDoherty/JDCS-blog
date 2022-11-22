@@ -10,16 +10,16 @@
 
     {
         "title": "Blog Template",
-        "subtitle": "This is the blog post template",
+        "subtitle": "This is the blog template",
         "url": "/blogtemplate",
         "date": "2022/11/21",
         "tags":["test"]
     },
 
     {
-        "title": "Blog Demo",
-        "subtitle": "This is just the template again",
-        "url": "/blogtemplate",
+        "title": "Fake Blog Post",
+        "subtitle": "This is a fake blog post",
+        "url": "/fakeblogpost",
         "date": "2022/11/20",
         "tags":["test"]
     }

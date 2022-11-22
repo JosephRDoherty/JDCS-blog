@@ -1,55 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <%- include('../partials/head'); %>
-  <!-- Remember to enter this article into blogs.json -->
+    <!-- Remember to enter this article into blogs.json -->
 </head>
+
 <body class="container">
 
-<header>
-  <%- include('../partials/header'); %>
-</header>
+  <header>
+    <%- include('../partials/header'); %>
+  </header>
 
-<main>
-  <div class="jumbotron">
-    <h1>Building a Blog</h1>
-    <p>Or at least, building the foundations</p>
-  </div>
-<div>
-  <img src="images/barelyfunctionalblog.png" alt="Image of my blog in the beginning" width="75%">
-  <p>In the beginning, Joe said "let there be white". #FFFFFF, that is.</p>
-  <hr>
-  <p>
-    Hello!
-    Welcome to my first blog post. The blog isn't even done yet, not even close, but it's functional (at least, on my machine).
-    Building this blog up to this point was a frustrating but ultimately glorious journey through the world of Node.js, Express.js, and corporate network restrictions.
-  </p>
-  <p>
-    So I basically dove head first into territory I've never been before. I'm a <em>front end</em> developer. I've almost exclusively built mostly static, old school websites, so this was a big jump for me. I've got plenty of programming experience, don't get me wrong. But the separation between client and server was not always clear while I was developing this, especially since I'm using Node.js, which allows you to use javascript on both the front AND back end. Sometimes the line between server and client was not always clear.
-  </p>
-  <p>
-    I built this site with Node.js, Express.js, and The EJS View Engine. Why these choices? Well, after much consideration, because I would be the sole developer on this project, it made sense to keep the entire thing in a single programming language. As much as I would've prefered a language <em>other</em> than javascript, I am ultimately forced by "Big Web" to use it on the front end, so the decision on <em>what</em> language to use was made for me. 
-  </p>
-  <p>
-    After getting a small bit of code set up in Node.js, I quickly discovered that Node doesn't send the css files along with the html, which seems incredibly stupid to me but I'm sure there's a good reason. So I dug around for a solution, and most people said "use Express.js", and so the ever-growing list of dependencies grew...
-  </p>
-  <p>
-    With Express.js installed, I was pleasantly surprised to discover that it contained a way to generate a functional website, to save a bit of effort on all the boilerplate. Within this, I found a view engine, Jade, was installed. I took one look at it and was terrified. It seemed to have no end tags, how am I going to control when divs end? It was rather horrifying, as someone who knows HTML well and doesn't have too many gripes with it, so I immediately searched for an alternative, and found EJS. EJS is great because it doesn't try to create it's own language, or use some other language, it just uses javascript. This was especially great as it continued with my theme of "Javascript all the way down" for this project.
-  </p>
-  <p>
-    And then the struggles began. I battled armies of bugs and dug through libraries of stack overflow questions, but it finally worked. It was very much like being pushed into a lake without fully understanding how to swim, but understanding the basic mechanics of it. I learned a lot, though, and I finally managed to get the bare minimum functionality, well, functional.
-  </p>
-  <p>And now here we are, a barely functional website, with essentially zero content. How did you even find this post, anyways?</p>
-  <p>- Joe Doherty</p>
-</div>
-  
-<%- include('../partials/blogpostcard'); %>
+  <main>
+    <div class="blogbody">
+      <div class="imgbox">
+        <img class="blogimg" src="images/barelyfunctionalblog.png" alt="Image of my blog in the beginning">
+        <p class="imgcaption">In the beginning, Joe said "let there be white".<em> #FFFFFF, specifically.</em></p>
+      </div>
+      <div class="columns">
+        <div class="blogtext">
+          <div class="jumbotron">
+            <h1>Building a Blog</h1>
+            <p>Or at least, building the foundations</p>
+          </div>
+          <hr>
+          <p>
+            Hello!
+            Welcome to my first blog post. The blog isn't even done yet, not even close, but it's functional (at least,
+            on my machine).
+            Building this blog up to this point was a frustrating but ultimately glorious journey through the world of
+            Node.js, Express.js, and corporate network restrictions.
+          </p>
+          <p>
+            So I basically dove head first into territory I've never been before. I'm a <em>front end</em> developer.
+            I've almost exclusively built mostly static, old school websites, so this was a big jump for me. I've got
+            plenty of programming experience, don't get me wrong. But the separation between client and server was not
+            always clear while I was developing this, especially since I'm using Node.js, which allows you to use
+            javascript on both the front AND back end. Sometimes the line between server and client was not always
+            clear.
+          </p>
+          <p>
+            I built this site with Node.js, Express.js, and The EJS View Engine. Why these choices? Well, after much
+            consideration, because I would be the sole developer on this project, it made sense to keep the entire thing
+            in a single programming language. As much as I would've prefered a language <em>other</em> than javascript,
+            I am ultimately forced by "Big Web" to use it on the front end, so the decision on <em>what</em> language to
+            use was made for me.
+          </p>
+          <p>
+            After getting a small bit of code set up in Node.js, I quickly discovered that Node doesn't send the css
+            files along with the html, which seems incredibly stupid to me but I'm sure there's a good reason. So I dug
+            around for a solution, and most people said "use Express.js", and so the ever-growing list of dependencies
+            grew...
+          </p>
+          <p>
+            With Express.js installed, I was pleasantly surprised to discover that it contained a way to generate a
+            functional website, to save a bit of effort on all the boilerplate. Within this, I found a view engine,
+            Jade, was installed. I took one look at it and was terrified. It seemed to have no end tags, how am I going
+            to control when divs end? It was rather horrifying, as someone who knows HTML well and doesn't have too many
+            gripes with it, so I immediately searched for an alternative, and found EJS. EJS is great because it doesn't
+            try to create it's own language, or use some other language, it just uses javascript. This was especially
+            great as it continued with my theme of "Javascript all the way down" for this project.
+          </p>
+          <p>
+            And then the struggles began. I battled armies of bugs and dug through libraries of stack overflow
+            questions, but it finally worked. It was very much like being pushed into a lake without fully understanding
+            how to swim, but understanding the basic mechanics of it. I learned a lot, though, and I finally managed to
+            get the bare minimum functionality, well, functional.
+          </p>
+          <p>And now here we are, a barely functional website, with essentially zero content. How did you even find this
+            post, anyways?</p>
+          <p>- Joe Doherty</p>
+        </div>
+        <%- include('../partials/blogpostcard'); %>
+      </div>
+    </div>
+  </main>
 
-</main>
-
-<footer>
-  <%- include('../partials/footer'); %>
-</footer>
+  <footer>
+    <%- include('../partials/footer'); %>
+  </footer>
 
 </body>
+
 </html>
