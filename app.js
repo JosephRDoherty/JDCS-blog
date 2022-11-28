@@ -74,6 +74,11 @@ app.get('/buildingablog', function(req, res) {
   res.render('blogposts/buildingablog');
 });
 
+// Building a Blog
+app.get('/whyiprogram', function(req, res) {
+  res.render('blogposts/whyiprogram');
+});
+
 
 // ======================================================
 //        END URLs

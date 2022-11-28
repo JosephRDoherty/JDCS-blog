@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head'); %>
+    <!-- Remember to enter this article into blogs.json -->
+</head>
+
+<body class="container">
+
+  <header>
+    <%- include('../partials/header'); %>
+  </header>
+
+  <main>
+    <div class="blogbody">
+      <div class="imgbox">
+        <img class="blogimg" src="images/Star-Wars-Battlefront-2-2005-1.jpg"
+          alt="Screenshot of Star Wars Battlefront 2 gameplay">
+        <p class="imgcaption">The greatest Star Wars game ever made</p>
+      </div>
+      <div class="columns">
+        <div class="blogtext">
+          <div class="jumbotron">
+            <h1>How I Became a Programmer</h1>
+            <p>The story of how I discovered programming</p>
+          </div>
+          <hr>
+          <p>
+            I was 12, home alone, and decided to dig around inside the family computer desk drawers, for no particular reason. That's how I found it. My lost copy of Star Wars: Battlefront II 2005 on CD-ROM. I felt like James W. Marshall, discovering gold in California in 1848. I excitedly pushed open the disc drive on the family PC, and waited for Windows XP to allow me to install. That is when disaster struck. Installing from a disc required administrative privilages, which I of course did not possess. My dad wasn't home, and I needed to find a way to hack into his account. I spent hours searching online, trying to find a way to bypass the administratior permissions, guessing my dad's passwords, <em>desperately</em> trying to find a way to just <em>play my star wars video game</em>. Alas, it was an impossible feat, especially for a 12 year old. But during my travels throughout the depths of the internet, like Bilbo finding the One Ring, I stumbled upon something I could never have imagined: batch files.
+          </p>
+          <p>
+            For those who don't know, batch files are very simple script files that are mostly just used to automate simple command-line tasks on a windows machine. You whip them up in notepad, save them with a .bat extension, and then you can run them like any other program. The thing that made these batch files interesting to <em>me</em> however, was that they could do 3 things: read user input, run conditionals (if statements), and execute other batch files. These three things would allow me to create my very own text-based Role-Playing games. Like Thanos with the infinity stones, reality could be whatever I wanted. For months, I made countless games and stories, and got more and more creative, creating character classes, skill levels, and even turn based pokemon-style combat. 
+          </p>
+          <p>
+            One night I told my dad about these batch files during dinner, and he told me how that is called computer programming, and how he made "the first" bass fishing computer game in Basic on his family's commodore 64 that all the neighborhood kids would come over and play. Later, at some family gathering, my dad mentioned how I was dabbling in computer programming to an <em>actual</em> computer programmer. He asked what language I was using, and I told him how I was just making batch files. I remember him saying "That's an OK place to start, but you should look into Python". And so I did.
+          </p>
+          <p>
+            The problem I then discovered was that the internet in 2009/2010 was not rich with the coding resources that it is today. I was on my own with some physical python manual books (that were NOT intro-to-programming books, but more just reference material), and code forums mostly written by and for people who went to college for this sort of thing. I read those books cover to cover, but things just weren't really clicking for me. I didn't understand why the books spent so much time covering arrays, when they seemed so.... useless and niche at the time, I just couldn't see a very common use case at the time. I did however get <em>very</em> excited about classes, functions, and objects, because I could understand how powerful they could be when making my games. But I was lucky, because as I continued my learning, the internet started blossoming with code courses. Codecademy was one that I found that really helped me understand HOW to code, and not just what certain built-in functions return and how to use them. As the years went by, I started branching out more and more. In high-school I started really digging into front-end web development, and dabbled in java (for minecraft mods), C# for the Unity game engine, and even a bit of C++ for arduino projects.
+          </p>
+          <p>
+            It's been about 13 years at time of writing since I first discovered batch files, and I still have that Star Wars CD-ROM game on my bookshelf. I'm now married and working as a Front-End Web Developer. I've been blessed to turn one of my hobbies into a career, and it's all because I found my missing video game when I was home alone for the evening, and didn't have the patience to just wait for my dad to come home.
+          </p>
+          <p>- Joe Doherty</p>
+        </div>
+        <%- include('../partials/blogpostcard'); %>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <%- include('../partials/footer'); %>
+  </footer>
+
+</body>
+
+</html>

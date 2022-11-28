@@ -1,11 +1,18 @@
 [
+    {
+        "title": "How I Became a Programmer",
+        "subtitle": "The story of how I discovered programming",
+        "url": "/whyiprogram",
+        "date": "2022/11/28",
+        "tags":["Life", "Programming", "Stories"]
+    },
 
     {
         "title": "Building a Blog",
         "subtitle": "Or at least, building the foundations",
         "url": "/buildingablog",
         "date": "2022/11/21",
-        "tags":["Build Blogs"]
+        "tags":["Build Blogs", "Stories"]
     },
 
     {
