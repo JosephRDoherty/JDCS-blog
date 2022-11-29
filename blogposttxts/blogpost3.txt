@@ -1,0 +1,39 @@
+
+How This Website Works
+Written for regular people
+
+Process:
+write article
+translate it to blog webpage
+enter it into blogs.json
+include the URL in app.js
+Website does the rest
+
+Code Process:
+app.js
+app.js sets up the URLs, and a few other helpful things that make the actual website work
+app.js tells the website that index.ejs is the "home" page, and will be the first page that opens on the site
+
+ejs
+ejs is a "view engine" that adds more functionality to simple web pages
+ejs files are "compiled" by the server into basic HTML web pages that get sent to the user
+ejs is a tool that makes web developer's jobs easier and reduces repetition using partials
+
+css
+css is the language that tells the website how it should look. The .css file, or "Stylesheet" is sent alongside the HTML file to your browser. Your browser then does the work of turning the code into an actual visual website
+
+How the Blog System Works:
+Blog posts are automatically fed to each page as they are written. I don't need to copy and paste the title into every single page on the site. Here's how I'm able to accomplish that:
+I write a blog post into a "blog template" .ejs file that I've created. the blog template has some code that includes the header, footer, and other repeated modules that you can find across the website. 
+once the blog post .ejs is done, I manually enter some information into blogs.json. JSON files are files that store data that is readable by the computer.
+Included in each JSON entry is the title, subtitle, URL for the page, and more, for each individual blog post.
+This allows me to permanently store this information for future use. 
+I also enter the URL into the app.js file, so that the server knows what page to send to the user when that link is clicked.
+All of this information is fed to an .ejs partial called blogpostcard.ejs. This loops through each entry in blogs.json and puts the information into a section of HTML code. It also filters out any test entries that I don't want to show on the site.
+since this is done on the server, BEFORE the page gets sent to the user, it all works perfectly fine by the time it reaches your computer.
+
+Improvements I want to make:
+I don't want to have to manually enter the blog information into the blogs.json file, and I don't want to manually enter my URLs into the app.js file. You always want to keep your code D.R.Y. (Don't Repeat Yourself), so I need to make a way to automatically write to the blogs.json file, and then have the app.js file automatically read the blogs.json file and automatically create the URLs needed. For now, this system works though, and when building things, I always try to start with just the Minimum Viable Product (MVP), and then expand and grow from there. It allows you to get the most crucial and often most difficult problems solved immediately, and be able to test your implimentation quickly and make big changes to the design without losing massive amounts of development work.
+
+Another great improvement would be to have a "blog post creator", where all I would have to do is type into a text box, and have it automatically formatted into the blogtemplate.ejs. This would allow people who don't know how to write HTML to write a blog post and have it go live on the site immediately.
+
