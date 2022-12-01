@@ -1,6 +1,5 @@
 html {}
 
-
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -327,7 +326,6 @@ main {
     margin: 0;
   }
 
-
   main {
     margin-left: 3vw;
     margin-right: 3vw;
@@ -342,7 +340,7 @@ main {
   .subtitleLink .bigbutton {
     width: 80vw;
   }
-
+  
   .bigbutton {
     margin: 0;
   }
