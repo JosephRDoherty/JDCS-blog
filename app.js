@@ -10,6 +10,7 @@ var usersRouter = require('./routes/users');
 
 const cors = require("cors");
 
+var blogs;
 
 var app = express();
 
@@ -26,7 +27,7 @@ fs.readFile("./blogs.json", "utf8", (err, jsonString) => {
     return;
   }
   try {
-    const blogs = JSON.parse(jsonString);
+    blogs = JSON.parse(jsonString);
     app.locals.blog = blogs;
   } catch (err) {
     console.log("Error parsing JSON string:", err);
@@ -37,27 +38,31 @@ fs.readFile("./blogs.json", "utf8", (err, jsonString) => {
 //        URLs
 // ======================================================
 
+function renderURLs(path, item, alias=item){
+  // path is the path to the item
+  // the item is the name of the file
+  // alias is what allows /blog, or anything like that to function.
+  // alias defaults to item because most of the time they are the same.
+
+  return app.get("/" + alias, function(req, res) {
+    res.render(path + item);
+  })
+}
+
+
 // index page
-app.get('/', function(req, res) {
-  res.render('pages/index');
-});
-app.get('/blog', function(req, res) {
-  res.render('pages/index');
-});
+renderURLs('pages/', 'index', "");
+renderURLs('pages/', 'index', 'blog')
 
 // about page
-app.get('/about', function(req, res) {
-  res.render('pages/about');
-});
+renderURLs('pages/', 'about');
 
 // resume page
-app.get('/resume', function(req, res) {
-  res.render('pages/resume');
-});
-
-
+renderURLs('pages/', 'resume');
 
 // We need some automation here, in order to add these blog posts
+
+console.log(blogs);
 
 // blog template
 app.get('/blogtemplate', function(req, res) {
