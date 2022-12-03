@@ -1,0 +1,56 @@
+.fullsize .articlesbox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    a {
+        text-decoration: none;
+    }
+
+    h3 {
+        margin: 0;
+        font-size: 1.75rem;
+        text-decoration: underline;
+    }
+
+    h4 {
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.columns .articlesbox {
+    background-color: var(--primary);
+    color: var(--neutral-white);
+    padding: 1rem;
+    border-radius: 20px;
+
+    a {
+        text-decoration: none;
+        color: var(--neutral-white);
+    }
+
+    h3 {
+        text-decoration: underline;
+        color: var(--neutral-light);
+    }
+
+    h4 {
+        margin: 0;
+        margin-bottom: 0.25rem;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    p {
+        margin: 0;
+        color: var(--neutral-mid);
+    }
+
+    .blogcard {
+        margin-bottom: 1rem;
+    }
+}

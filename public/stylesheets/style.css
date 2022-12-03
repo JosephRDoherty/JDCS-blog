@@ -42,6 +42,48 @@ ul {
   list-style: square;
 }
 
+.bigbutton {
+  background-color: #DB3D35;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid #902923;
+  border-radius: 1000px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3137254902);
+  transition: all 0.2s ease-in-out;
+}
+.bigbutton :hover {
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.3137254902);
+  margin-top: calc(-4px + 1rem);
+  margin-bottom: calc(4px + 1rem);
+  cursor: pointer;
+}
+.bigbutton a {
+  text-decoration: none;
+}
+.bigbutton a :visited {
+  color: #ffffff;
+}
+
+.getintouchul {
+  list-style: none;
+}
+.getintouchul li {
+  margin-bottom: 0.5rem;
+  font-size: 18px;
+}
+.getintouchul a {
+  text-decoration: none;
+  font-weight: 700;
+}
+.getintouchul i {
+  font-size: 2rem;
+  margin-right: 0.7rem;
+}
+
 .navbar {
   display: flex;
   justify-content: flex-start;
@@ -85,4 +127,11 @@ ul {
 .navbar .items .navitem .navlink {
   text-decoration: none;
   color: var(--neutral-white);
+}
+
+.redbubble {
+  background-color: #902923;
+  color: white;
+  padding: 1rem;
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */
