@@ -1,0 +1,22 @@
+.blogbody {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogtext {
+    max-width: 50vw;
+}
+
+
+@media only screen and (max-width: 767px) {
+.blogtext {
+    max-width: 90vw;
+    font-size: 1rem;
+  }
+
+  
+}

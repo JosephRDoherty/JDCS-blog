@@ -15,3 +15,11 @@
         color: var(--neutral-white);
     }
 }
+
+
+@media only screen and (max-width: 767px) {
+    .footer {
+        font-size: 0.75rem;
+        flex-wrap: wrap;
+      }
+}

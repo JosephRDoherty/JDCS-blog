@@ -1,3 +1,8 @@
+/* 
+These are the original CSS styles, before the converstion to SCSS
+I'm keeping this for now just in case, but it is deprecated
+*/
+
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -91,7 +96,7 @@ main {
   margin-top: 2rem;
 }
 
-.subtitleLink {
+.flexArray {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -324,10 +329,10 @@ main {
     min-height: 80vh;
     width: auto;
   }
-  .subtitleLink {
+  .flexArray {
     flex-direction: column;
   }
-  .subtitleLink .bigbutton {
+  .flexArray .bigbutton {
     width: 80vw;
   }
   .bigbutton {
@@ -372,4 +377,4 @@ main {
   .getintouchul {
     padding: 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}

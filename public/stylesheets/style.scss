@@ -4,10 +4,11 @@
 
 
 //@use "base/";
+@use "base/flexArray";
+@use "base/columns";
 
-
-
-@use "components/articlelist";
+//@use "components/";
+@use "components/articlesbox";
 @use "components/buttons";
 @use "components/footer";
 @use "components/getintouch";
@@ -16,3 +17,5 @@
 @use "components/redbubble";
 
 //@use "layout/";
+@use "layout/mainpage";
+@use "layout/blogpage";

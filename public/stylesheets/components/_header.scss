@@ -48,3 +48,32 @@
         }
     }
 }
+
+@media only screen and (max-width: 767px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 10vh;
+      overflow-y: scroll;
+
+      .items {
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+        width: auto;
+      }
+    }
+
+    #navbar .logo {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+      }
+    .navitem {
+      font-size: 1.25rem;
+      margin: 0;
+    }
+}
