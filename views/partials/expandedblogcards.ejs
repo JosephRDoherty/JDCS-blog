@@ -1,0 +1,18 @@
+<div class="articlesbox">
+    <% 
+    for(let i=0; i< blog.length; i++){ 
+        if(!blog[i].tags.includes("test")){%>
+        <div class="blogcard"><a href="<%- blog[i].url %>">
+            <img src="images/<%- blog[i].image %>" alt="image from blog post">
+            <div>
+                <h3><%- blog[i].title %></h3>
+                <h4><%- blog[i].subtitle %></h4>
+                <p><%- blog[i].date %></p>
+            </div>
+            </a>
+        </div>
+        <br>
+        <%}
+    }%>
+    <br>
+</div>

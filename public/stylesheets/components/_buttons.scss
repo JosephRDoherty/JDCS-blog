@@ -5,9 +5,10 @@
     color: var(--neutral-white);
     font-weight: 700;
     font-size: 1.2rem;
-    padding: 1.5rem;
+    padding: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    max-width: 80%;
     border: 2px solid var(--primary);
     border-radius: 1000px;
     box-shadow: 0px 1px 1px var(--shadow-color);
@@ -15,6 +16,7 @@
 
     a {
         text-decoration: none;
+        color: var(--neutral-white);
 
 
         :visited {
@@ -28,4 +30,19 @@
     margin-top: calc(-4px + 1rem);
     margin-bottom: calc(4px + 1rem);
     cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .bigbutton {
+        margin: 0;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .bigbutton:hover  {
+        margin-top: calc(-4px + 0.5rem);
+        margin-bottom: calc(4px + 0.5rem);
+    }
+
 }

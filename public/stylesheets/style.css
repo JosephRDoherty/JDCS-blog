@@ -50,11 +50,13 @@ ul {
   justify-content: center;
   text-align: center;
   gap: 1rem;
+  overflow-y: scroll;
 }
 
 @media only screen and (max-width: 767px) {
   .flexArray {
     flex-direction: column;
+    gap: 0;
   }
   .flexArray .bigbutton {
     width: 80vw;
@@ -132,9 +134,10 @@ ul {
   color: var(--neutral-white);
   font-weight: 700;
   font-size: 1.2rem;
-  padding: 1.5rem;
+  padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  max-width: 80%;
   border: 2px solid var(--primary);
   border-radius: 1000px;
   box-shadow: 0px 1px 1px var(--shadow-color);
@@ -142,6 +145,7 @@ ul {
 }
 .bigbutton a {
   text-decoration: none;
+  color: var(--neutral-white);
 }
 .bigbutton a :visited {
   color: var(--neutral-white);
@@ -154,6 +158,17 @@ ul {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 767px) {
+  .bigbutton {
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .bigbutton:hover {
+    margin-top: calc(-4px + 0.5rem);
+    margin-bottom: calc(4px + 0.5rem);
+  }
+}
 .footer {
   display: flex;
   align-items: center;
@@ -173,8 +188,10 @@ ul {
 
 @media only screen and (max-width: 767px) {
   .footer {
-    font-size: 0.75rem;
+    height: 10vh;
+    font-size: 1rem;
     flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 .getintouchul {
@@ -328,6 +345,52 @@ ul {
   border-radius: 20px;
 }
 
+.expandedblogcards .articlesbox .blogcard {
+  display: flex;
+  background-color: var(--primary);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.expandedblogcards .articlesbox .blogcard a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: var(--);
+}
+.expandedblogcards .articlesbox .blogcard a h3 {
+  text-decoration: underline;
+  color: var(--neutral-light);
+}
+.expandedblogcards .articlesbox .blogcard a h4 {
+  font-style: italic;
+  margin: 0;
+  margin-top: 0.5rem;
+  font-weight: 300;
+  color: var(--neutral-white);
+}
+.expandedblogcards .articlesbox .blogcard a p {
+  font-weight: 300;
+  color: var(--neutral-mid);
+}
+.expandedblogcards .articlesbox .blogcard img {
+  width: 12rem;
+  margin-right: 2rem;
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .expandedblogcards .articlesbox .blogcard a {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .expandedblogcards .articlesbox .blogcard a img {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+}
 main {
   margin-left: 8vw;
   margin-right: 8vw;

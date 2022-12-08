@@ -52,7 +52,6 @@ function renderURLs(path, item, alias=item){
 
 // index page
 renderURLs('pages/', 'index', "");
-renderURLs('pages/', 'index', 'blog')
 
 // about page
 renderURLs('pages/', 'about');
@@ -60,9 +59,9 @@ renderURLs('pages/', 'about');
 // resume page
 renderURLs('pages/', 'resume');
 
-// We need some automation here, in order to add these blog posts
 
-console.log(blogs);
+
+// We need some automation here, in order to add these blog posts
 
 // blog template
 app.get('/blogtemplate', function(req, res) {
