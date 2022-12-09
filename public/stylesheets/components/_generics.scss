@@ -9,6 +9,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--neutral-light);
+    overflow-x: hidden;
+  }
+
+  .container {
+    margin: 0;
   }
   
   a {

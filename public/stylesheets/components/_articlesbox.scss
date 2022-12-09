@@ -1,3 +1,5 @@
+@use "../base/variables" as *;
+
 .fullsize .articlesbox {
     display: flex;
     flex-direction: column;
@@ -27,9 +29,28 @@
     color: var(--neutral-white);
     padding: 1rem;
     border-radius: 20px;
+    position: sticky;
+    top: 2rem;
+    max-width: clamp(10rem, 25%, 40vw);
+
+    .modaltitlebar {
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-start;
+    }
+
+    i {
+        font-size: 2rem;
+        color: var(--neutral-mid);
+    }
 
     a {
         text-decoration: none;
+        color: var(--neutral-white);
+    }
+
+    h2 {
+        margin: 0;
         color: var(--neutral-white);
     }
 
@@ -43,6 +64,7 @@
         margin-bottom: 0.25rem;
         font-weight: 300;
         font-style: italic;
+        color: var(--neutral-white);
     }
 
     p {
@@ -55,11 +77,11 @@
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: $sidebarBP) {
     .columns .articlesbox {
         margin-bottom: 1rem;
         margin-left: auto;
         margin-right: auto;
-        width: 80vw;
+        width: 20vw;
       }
 }

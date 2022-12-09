@@ -1,11 +1,20 @@
+@use "variables" as *;
+
 .columns {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
+    justify-content: center;
   }
 
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: $tabletBP) {
+  .columns {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: $sidebarBP) {
   .columns {
     flex-direction: column;
   }

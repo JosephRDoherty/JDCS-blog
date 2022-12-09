@@ -9,7 +9,7 @@
     --primary-dark: #5C1A16;
     --primary-light: #a22c29;
     --secondary: #DB3D35;
-    --tertiary: ;
+    --tertiary: #FFA300;
     --shadow-color: rgba(0, 0, 0, 0.3137254902);
     --neutral-border: rgba(0, 0, 0, 0.1254901961);
 }
@@ -18,3 +18,5 @@
 
 
 // SASS Variables (Transpiled on server side!)
+$tabletBP: 800px;
+$sidebarBP: 1140px;

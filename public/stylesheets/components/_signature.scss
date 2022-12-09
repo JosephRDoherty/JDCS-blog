@@ -1,0 +1,41 @@
+@use "../base/variables" as *;
+
+.signature {
+    float: right;
+    display: flex;
+    gap: 2rem;
+    background-color: var(--primary-dark);
+    border-radius: 1rem;
+    width: fit-content;
+    max-width: 600px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    
+    img {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        border: 2px solid var(--neutral-mid);
+        background-color: var(--secondary);
+    }
+
+    h6 {
+        font-size: 1.75rem;
+        color: var(--neutral-mid);
+        margin: 0;
+    }
+
+    p {
+        color: var(--neutral-mid);
+    }
+}
+
+@media only screen and (max-width: $tabletBP) {
+
+    .signature {
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+}

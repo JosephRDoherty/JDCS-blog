@@ -1,4 +1,4 @@
-
+@use "../base/variables" as *;
 
 .bigbutton {
     background-color: var(--secondary);
@@ -32,7 +32,7 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: $tabletBP) {
 
     .bigbutton {
         margin: 0;

@@ -1,3 +1,5 @@
+@use "../base/variables" as *;
+
 .footer {
     display: flex;
     align-items: center;
@@ -17,7 +19,7 @@
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: $tabletBP) {
     .footer {
         height: 10vh;
         font-size: 1rem;

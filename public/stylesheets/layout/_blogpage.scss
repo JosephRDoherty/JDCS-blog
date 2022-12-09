@@ -1,6 +1,8 @@
+@use "../base/variables" as *;
+
 .blogbody {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,15 +10,35 @@
 }
 
 .blogtext {
-    max-width: 50vw;
+    width: 100%;
+}
+
+.imgandtext {
+    display: flex;
+    gap: 2rem;
+
+    // p {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
 }
 
 
-@media only screen and (max-width: 767px) {
-.blogtext {
-    max-width: 90vw;
-    font-size: 1rem;
-  }
+@media only screen and (max-width: $tabletBP) {
+    
+    .blogbody {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .blogtext {
+        max-width: 90vw;
+        font-size: 1rem;
+    }
 
-  
+    .imgandtext {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
