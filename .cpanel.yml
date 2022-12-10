@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/dohertyjoe198/joe.doherty.software/
+    - export DEPLOYPATH=/home/dohertyjoe198/public_html/joseph
     - /bin/cp app.js $DEPLOYPATH
     - /bin/cp blogs.json $DEPLOYPATH
     - /bin/cp package-lock.json $DEPLOYPATH
