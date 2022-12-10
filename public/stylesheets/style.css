@@ -49,13 +49,18 @@ ul {
   list-style: square;
 }
 
+hr {
+  border-top: 2px solid var(--primary);
+  border-bottom: 1px solid var(--neutral-white);
+  width: 100%;
+}
+
 .flexArray {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   gap: 1rem;
-  overflow-y: scroll;
 }
 
 @media only screen and (max-width: 800px) {
@@ -82,6 +87,44 @@ ul {
 @media only screen and (max-width: 1140px) {
   .columns {
     flex-direction: column;
+  }
+}
+.pheader1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.pheader2 {
+  font-size: 1.5rem;
+  margin: 0;
+  margin-top: 0.5rem;
+  border-top: 1px dashed var(--primary);
+  border-bottom: 1px dashed var(--primary);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-style: italic;
+  font-weight: 300;
+  text-align: right;
+}
+
+.leftjustify {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.displayOff {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .pheader1 {
+    font-size: 1.5rem;
+  }
+  .pheader2 {
+    font-size: 1.15rem;
+  }
+  .displayOffMobile {
+    display: none;
   }
 }
 .fullsize .articlesbox {
@@ -237,19 +280,19 @@ ul {
   margin-right: 2rem;
   border-radius: 1rem;
 }
+
 @media only screen and (max-width: 800px) {
-  .expandedblogcards .articlesbox .expandedblogcards .articlesbox .blogcard a {
+  .expandedblogcards .articlesbox .blogcard a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .expandedblogcards .articlesbox .expandedblogcards .articlesbox .blogcard a img {
+  .expandedblogcards .articlesbox .blogcard a img {
     width: 100%;
     margin: 0;
     margin-bottom: 0.5rem;
   }
 }
-
 .footer {
   display: flex;
   align-items: center;
@@ -454,11 +497,21 @@ ul {
     width: 30vw;
   }
 }
+.profilepic {
+  background-color: var(--primary-light);
+  border-radius: 50%;
+  max-width: 12rem;
+}
+
 .redbubble {
   background-color: var(--primary);
   color: var(--neutral-white);
   padding: 1rem;
   border-radius: 20px;
+}
+
+.selfblurb {
+  border-radius: 8rem;
 }
 
 .signature {
@@ -500,7 +553,7 @@ ul {
 main {
   margin-left: auto;
   margin-right: auto;
-  max-width: 90vw;
+  width: 80vw;
   min-height: 80vh;
 }
 
@@ -508,13 +561,6 @@ main {
   margin-top: 2rem;
 }
 
-@media screen and (max-width: 800px) {
-  main {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    min-height: 80vh;
-  }
-}
 .blogbody {
   margin-left: 10vw;
   margin-right: 10vw;

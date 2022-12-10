@@ -44,23 +44,24 @@
                 border-radius: 1rem;
             }
         }
+}
+}
 
-        @media only screen and (max-width: $tabletBP) {
-            .expandedblogcards .articlesbox .blogcard {
+
+@media only screen and (max-width: $tabletBP) {
+    .expandedblogcards .articlesbox .blogcard {
 
 
-                a {
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
+        a {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-                    img {
-                        width: 100%;
-                        margin: 0;
-                        margin-bottom: 0.5rem;
-                    }
-                }
+            img {
+                width: 100%;
+                margin: 0;
+                margin-bottom: 0.5rem;
+            }
         }
-    }
 }
 }

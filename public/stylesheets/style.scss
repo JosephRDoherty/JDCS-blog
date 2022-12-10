@@ -6,6 +6,7 @@
 //@use "base/";
 @use "base/flexArray";
 @use "base/columns";
+@use "base/utilities";
 
 //@use "components/";
 @use "components/articlesbox";
@@ -15,7 +16,9 @@
 @use "components/getintouch";
 @use "components/header";
 @use "components/imagebox";
+@use "components/profilepic";
 @use "components/redbubble";
+@use "components/selfblurb";
 @use "components/signature";
 
 //@use "layout/";

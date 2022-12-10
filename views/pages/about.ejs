@@ -1,68 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <%- include('../partials/head'); %>
 </head>
+
 <body class="container">
 
-<header>
-  <%- include('../partials/header'); %>
-</header>
+  <header>
+    <%- include('../partials/header'); %>
+  </header>
 
-<main>
-<div class="row">
-  <div class="col-sm-8">
+  <main>
     <div class="titleArea">
       <h1>About Me</h1>
-      <p>I'm Joe Doherty, a front-end web developer at Fire Mountain Gems, currently living in Grants Pass, Oregon, U.S.A. </p>
-        <p>I'm passionate about efficiency in both code and user interfaces, and building intuitive user experiences.<br>
+      <p>I'm Joe Doherty, a front-end web developer at Fire Mountain Gems, currently living in Grants Pass, Oregon,
+        U.S.A. </p>
+      <p>I'm passionate about efficiency in both code and user interfaces, and building intuitive user experiences.<br>
         When I'm not programming, I'm making music, doing woodworking, or playing video games.</p>
+
       <div class="flexArray">
         <!-- <div class="bigbutton"><a href="">Why I Became a Front-End Dev</a></div> -->
         <div class="bigbutton"><a href="/resume">Resume</a></div>
         <div class="bigbutton"><a href="/whyiprogram">How I Became a Programmer</a></div>
       </div>
-      
+      <hr>
+
       <br>
     </div>
-
-    
-
-      <div class="redbubble">
-        <h3>Tech Stack:</h3>
-        <ul>
-          <li>HTML, CSS, SASS</li>
-          <li>Javascript, Node.js, Express.js, EJS View Engine</li>
-          <li>Python</li>
-          <li>C# & The Razor View Engine</li>
-        </ul>
-      </div>
-      <br>
-      <%- include('../partials/getintouch'); %>
-      <br>
-      <div class="redbubble" id="expsum">
+    <div class="redbubble">
+      <h3>Tech Stack:</h3>
+      <ul>
+        <li>HTML, CSS, SASS</li>
+        <li>Javascript, Node.js, Express.js, EJS View Engine</li>
+        <li>Python</li>
+        <li>C# & The Razor View Engine</li>
+      </ul>
+    </div>
+    <br>
+    <%- include('../partials/getintouch'); %>
+    <br>
+    <div class="redbubble" id="expsum">
       <h3>Experience Summary:</h3>
       <ul>
         <li>At Fire Mountain Gems, I'm maintaining and modernizing our Front-End.</li>
         <br>
-        <li>At XP Power, I designed tools and processes to increase manufacturing productivity for high voltage power supplies using Solidworks, Mechanical Drawings used for CNC, 3D Printing of tooling and prototypes, and more. </li>
+        <li>
+          At XP Power, I designed tools and processes to increase manufacturing productivity for high voltage power
+          supplies using Solidworks, Mechanical Drawings used for CNC, 3D Printing of tooling and prototypes, and
+          more.
+        </li>
         <br>
-        <li>As a freelancer, I design and build websites, logos, and advertisement materials for startups and small businesses.</li>
-      </ul>
-      </div>
-      
+        <li>
+          As a freelancer, I design and build websites, logos, and advertisement materials for startups and small
+          businesses.</li>
+        </ul>
     </div>
-    <br>
-    <hr>
-    <br>
-    <%- include('../partials/expandedblogcards'); %>
-  </div>
-</div>
-</main>
 
-<footer>
-  <%- include('../partials/footer'); %>
-</footer>
+      <br>
+      <hr>
+      <br>
+      <%- include('../partials/expandedblogcards'); %>
+        </div>
+  </main>
+
+  <footer>
+    <%- include('../partials/footer'); %>
+  </footer>
 
 </body>
+
 </html>

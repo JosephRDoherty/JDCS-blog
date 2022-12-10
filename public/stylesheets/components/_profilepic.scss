@@ -1,0 +1,7 @@
+@use "../base/variables" as *;
+
+.profilepic {
+    background-color: var(--primary-light);
+    border-radius: 50%;
+    max-width: 12rem;
+}
