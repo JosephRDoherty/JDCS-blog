@@ -1,9 +1,4 @@
 <div class="articlesbox">
-    <div class="modaltitlebar">
-        <h2 id="articlebox-title">Articles</h2>
-        <div id="articlebox-xbtn" class="xbtn"><i class="fa-solid fa-square-xmark"></i></div>
-    </div>
-    <div id="articledropdown">
         <% 
         for(let i=0; i< blog.length; i++){ 
             if(!blog[i].tags.includes("test")){%>
@@ -16,6 +11,5 @@
             <%}
         }%>
         <br>
-    </div>
 </div>
 
