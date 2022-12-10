@@ -501,6 +501,7 @@ hr {
   background-color: var(--primary-light);
   border-radius: 50%;
   max-width: 12rem;
+  border: 2px solid var(--neutral-mid);
 }
 
 .redbubble {
@@ -517,6 +518,7 @@ hr {
 .signature {
   float: right;
   display: flex;
+  align-items: center;
   gap: 2rem;
   background-color: var(--primary-dark);
   border-radius: 1rem;

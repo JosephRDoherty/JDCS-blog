@@ -3,6 +3,7 @@
 .signature {
     float: right;
     display: flex;
+    align-items: center;
     gap: 2rem;
     background-color: var(--primary-dark);
     border-radius: 1rem;
