@@ -10,7 +10,6 @@ var usersRouter = require('./routes/users');
 
 const cors = require("cors");
 
-var blogs;
 
 var app = express();
 
@@ -21,30 +20,41 @@ app.use(cors())
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+// Read blogs.json and save it to the app.locals.blog variable. accessible throughout the views as blog
 fs.readFile("./blogs.json", "utf8", (err, jsonString) => {
   if (err) {
     console.log("Error reading file from disk:", err);
     return;
   }
   try {
-    blogs = JSON.parse(jsonString);
+    let blogs = JSON.parse(jsonString);
     app.locals.blog = blogs;
+    //listURLs(blogs);
   } catch (err) {
     console.log("Error parsing JSON string:", err);
   }
+
 });
 
 // ======================================================
 //        URLs
 // ======================================================
+// function listURLs(blogs){
+//   for(let i = 0; i< blogs.length; i++){
+//     renderURLs('blogposts/', blogs[i].url);
+//     //console.log('blogposts/' + blogs[i].url);
+//   }
+// }
+
 
 function renderURLs(path, item, alias=item){
   // path is the path to the item
-  // the item is the name of the file
-  // alias is what allows /blog, or anything like that to function.
+  // the item is the name of the file itself.
+  // alias allows you to create different URL aliases.
   // alias defaults to item because most of the time they are the same.
 
   return app.get("/" + alias, function(req, res) {
+    console.log(path + item);
     res.render(path + item);
   })
 }

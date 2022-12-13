@@ -1,11 +1,15 @@
 :root {
+  --GGneutral-white: linear-gradient(150deg, #000436, #040035, #0b0035, #120034, #190033, #200032, #260032, #2d0031, #30002e, #2f0026, #2f001f, #2e0018);
+  --GGprimary: linear-gradient(150deg, #000c90, #09009a, #2100a4, #3c00ae, #5a00b8, #7a00c2, #9e00cd, #c400d7, #e100d4, #eb00bc, #f500a2, #ff0084);
+  --GGprimary-dark: #000c90;
+  --GGprimary-light: #ff0084;
   --neutral-white: #ffffff;
-  --neutral-light: #d6d5c9;
-  --neutral-mid: #b9baa3;
+  --neutral-light: #FFFBE8;
+  --neutral-mid: #D4C6AE;
   --primary: #902923;
-  --primary-dark: #5C1A16;
-  --primary-light: #a22c29;
-  --secondary: #DB3D35;
+  --primary-dark: #701111;
+  --primary-light: #A83E40;
+  --secondary: #A83E40;
   --tertiary: #FFA300;
   --shadow-color: rgba(0, 0, 0, 0.3137254902);
   --neutral-border: rgba(0, 0, 0, 0.1254901961);

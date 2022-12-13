@@ -3,7 +3,7 @@
         "title": "How I Became a Programmer",
         "subtitle": "The story of how I discovered programming",
         "image": "Star-Wars-Battlefront-2-2005-1.jpg",
-        "url": "/whyiprogram",
+        "url": "whyiprogram",
         "date": "2022/11/28",
         "tags":["Life", "Programming", "Stories"]
     },
@@ -12,7 +12,7 @@
         "title": "Building a Blog",
         "subtitle": "Or at least, building the foundations",
         "image": "barelyfunctionalblog.png",
-        "url": "/buildingablog",
+        "url": "buildingablog",
         "date": "2022/11/21",
         "tags":["Build Blogs", "Stories", "test"]
     },
@@ -21,7 +21,7 @@
         "title": "Blog Template",
         "subtitle": "This is the blog template",
         "image": null,
-        "url": "/blogtemplate",
+        "url": "blogtemplate",
         "date": "2022/11/21",
         "tags":["test"]
     },
@@ -30,7 +30,7 @@
         "title": "Fake Blog Post",
         "subtitle": "This is a fake blog post",
         "image": null,
-        "url": "/fakeblogpost",
+        "url": "fakeblogpost",
         "date": "2022/11/20",
         "tags":["test"]
     }

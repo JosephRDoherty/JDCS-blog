@@ -2,7 +2,7 @@
     <div class="articlesbox">
         <% for(let i=0; i< blog.length; i++){
             if(!blog[i].tags.includes("test")){%>
-                <div class="blogcard"><a href="<%- blog[i].url %>">
+                <div class="blogcard"><a href="/<%- blog[i].url %>">
                         <img src="images/<%- blog[i].image %>" alt="image from blog post">
                         <div>
                             <h3><%- blog[i].title %></h3>
