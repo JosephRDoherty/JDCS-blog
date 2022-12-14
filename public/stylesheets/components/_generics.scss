@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--neutral-light);
+    color: var(--neutral-black);
     overflow-x: hidden;
   }
 
@@ -22,6 +23,12 @@ body {
   
   a:visited {
     color: var(--primary);
+  }
+
+  h1 {
+    color: var(--neutral-dark-grey);
+    font-family: 'Poiret One', sans-serif;
+    font-size: 4rem;
   }
   
   h3 {

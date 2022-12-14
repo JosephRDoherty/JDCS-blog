@@ -4,6 +4,8 @@
   --GGprimary-dark: #000c90;
   --GGprimary-light: #ff0084;
   --neutral-white: #ffffff;
+  --neutral-black: #170504;
+  --neutral-dark-grey: #4D2522cc;
   --neutral-light: #FFFBE8;
   --neutral-mid: #D4C6AE;
   --primary: #902923;
@@ -26,6 +28,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--neutral-light);
+  color: var(--neutral-black);
   overflow-x: hidden;
 }
 
@@ -39,6 +42,12 @@ a {
 
 a:visited {
   color: var(--primary);
+}
+
+h1 {
+  color: var(--neutral-dark-grey);
+  font-family: "Poiret One", sans-serif;
+  font-size: 4rem;
 }
 
 h3 {
