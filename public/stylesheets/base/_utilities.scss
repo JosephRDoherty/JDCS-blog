@@ -3,6 +3,7 @@
 .pheader1 {
     font-size: 2rem;
     margin: 0;
+    line-height: normal;
 }
 
 .pheader2 {
@@ -16,6 +17,21 @@
     font-style: italic;
     font-weight: 300;
     text-align: right;
+    line-height: normal;
+}
+
+.psubheader {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.paragraph {
+    line-height: 225%;
+    margin-bottom: 4rem;
+}
+
+.nomargin {
+    margin: 0;
 }
 
 .leftjustify {
